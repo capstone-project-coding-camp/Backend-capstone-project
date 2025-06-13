@@ -37,6 +37,7 @@ backend-prediksi-gizi/
 ├── app.js # Inisialisasi aplikasi
 ├── package.json
 └── README.md
+~~~
 
 yaml
 Salin
@@ -56,6 +57,7 @@ cd backend-prediksi-gizi
 bash
 npm install
 
+~~~
 ### 3. Konfigurasi Environment
 Buat file .env:
 env
@@ -65,19 +67,24 @@ DB_USER=root
 DB_PASSWORD=your_password
 DB_NAME=prediksi_gizi
 JWT_SECRET=your_jwt_secret
+~~~
 
-
+~~~
 ### 4. Setup Database
 Pastikan MySQL aktif
 Buat database sesuai nama di .env (prediksi_gizi)
 Jika menggunakan Sequelize:
 npx sequelize db:migrate
 npx sequelize db:seed:all
+~~~
 
+~~~
 ### 5. Jalankan Server
 npm run dev
 Server berjalan di: http://localhost:3000
+~~~
 
+~~~
 ## 🔌 Contoh Endpoint API
 Method	Endpoint	Deskripsi
 POST	/api/auth/register	Registrasi pengguna
@@ -85,7 +92,8 @@ POST	/api/auth/login	Login pengguna
 GET	/api/prediksi	Get semua data prediksi
 POST	/api/prediksi	Submit data untuk prediksi
 GET	/api/user/profile	Ambil data profil pengguna
-
+~~~
+~~~
 ## 🧪 Contoh Data Input Prediksi
 
 {
@@ -95,3 +103,4 @@ GET	/api/user/profile	Ambil data profil pengguna
   "berat_badan": 14.2,
   "tinggi_badan": 98.5
 }
+~~~

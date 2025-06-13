@@ -48,15 +48,15 @@ Edit
 
 ### 1. Clone Repository
 
-```bash
+bash
 git clone https://github.com/capstone-project-coding-camp/Backend-capstone-project.git
 cd backend-prediksi-gizi
 
-2. Install Dependencies
+### 2. Install Dependencies
 bash
 npm install
 
-3. Konfigurasi Environment
+### 3. Konfigurasi Environment
 Buat file .env:
 env
 PORT=3000
@@ -67,18 +67,18 @@ DB_NAME=prediksi_gizi
 JWT_SECRET=your_jwt_secret
 
 
-4. Setup Database
+### 4. Setup Database
 Pastikan MySQL aktif
 Buat database sesuai nama di .env (prediksi_gizi)
 Jika menggunakan Sequelize:
 npx sequelize db:migrate
 npx sequelize db:seed:all
 
-5. Jalankan Server
+### 5. Jalankan Server
 npm run dev
 Server berjalan di: http://localhost:3000
 
-🔌 Contoh Endpoint API
+## 🔌 Contoh Endpoint API
 Method	Endpoint	Deskripsi
 POST	/api/auth/register	Registrasi pengguna
 POST	/api/auth/login	Login pengguna
@@ -86,7 +86,7 @@ GET	/api/prediksi	Get semua data prediksi
 POST	/api/prediksi	Submit data untuk prediksi
 GET	/api/user/profile	Ambil data profil pengguna
 
-🧪 Contoh Data Input Prediksi
+## 🧪 Contoh Data Input Prediksi
 
 {
   "nama": "Ani",
